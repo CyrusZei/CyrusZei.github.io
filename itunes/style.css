@@ -1,0 +1,640 @@
+/* css
+//  This is a school project made by me Mirsad Mustafa
+//  2015-11-30
+//
+*/
+
+
+/**********************************/
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+body {
+  background-color: #3498db;
+  top: 0px;
+  margin: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* ---------- alert ------------ */
+#alert {
+  height: 60px;
+  width: 100%;
+  background-color: #FF0000;
+  color: #FFFFFF;
+  position: fixed;
+}
+/* ---------- header ------------ */
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: #3498db;
+  color: #FFFFFF;
+  font-size: 30px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  background-color: #FF0000;
+  background: url(img/road.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* ---------- search box ------------ */
+input {
+  background-color: #FFFFFF;
+  height: 24px;
+  width: 300px;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 13px;
+  margin-right: 10px;
+}
+.search_result {
+  width: 100%;
+}
+
+/* ---------- content ------------ */
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #eaeaea;
+}
+.top_25 {
+  height: 300px;
+  width: 170px;
+  background-color: #FFFFFF;
+  border: 4px solid #FFFFFF;
+  margin: 5px;
+}
+h3, h4 {
+  text-align: center;
+  margin: 0px;
+}
+.release_date {
+  margin: 0px;
+  font-size: 12px;
+  text-align: center;
+}
+.play_pause {
+  width: 100%;
+  margin-top: 20px;
+}
+.song_cover {}
+.movie_cover {
+  width: 170px;
+}
+.book_cover {
+  height: 170px;
+  width: 170px;
+}
+.search_cover {
+  height: 170px;
+  width: 170px;
+}
+.buy_itunes {
+  position: inherit;
+  z-index: 999;
+  margin-top: -178px;
+  margin-left: -4px;
+  margin-bottom: 70px;
+  display: block;
+}
+.buy_movie_itunes {
+  position: inherit;
+  z-index: 999;
+  margin-top: -264px;
+  margin-left: -4px;
+  margin-bottom: 150px;
+  display: block;
+}
+.buy_ios_itunes {
+  position: inherit;
+  z-index: 999;
+  margin-top: -178px;
+  margin-left: -4px;
+  margin-bottom: 70px;
+  display: block;
+}
+.buy_book_itunes {
+  position: inherit;
+  z-index: 999;
+  margin-top: -178px;
+  margin-left: -4px;
+  margin-bottom: 70px;
+  display: block;
+}
+.search_area_itunes {
+  position: inherit;
+  z-index: 999;
+  margin-top: -108px;
+  margin-left: -4px;
+  margin-bottom: 70px;
+  display: block;
+}
+button:focus {
+  outline: 0;
+}
+
+/* ---------- loading ------------ */
+#loading {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.57);
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  margin: auto;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+}
+#loading_img {
+  margin: auto;
+  display: block;
+  width: 124px;
+  height: 128px;
+}
+
+/* ---------- footer ------------ */
+footer > p {
+  text-align: center;
+  padding: 30px;
+  color: #FFFFFF;
+}
+#love {
+  color: #FF0000;
+}
+#thinking {
+  color: #4E4E4E;
+}
+
+
+
+
+/* ---------- eye candy buttons yay ------------ */
+/* got this from http://tympanus.net/codrops/2012/01/11/css-buttons-with-pseudo-elements/ */
+
+
+/* all creed to him */
+
+
+/* ------------- search --------- */
+
+.search_button {
+  background-color: #3bb3e0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  padding: 11px 20px;
+  border-left: solid 1px #2ab7ec;
+  margin-top: 10px;
+  margin-left: 35px;
+  background-image: linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(44, 160, 202)), color-stop(1, rgb(62, 184, 229)));
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+}
+.search_button:active {
+  top: 3px;
+  background-image: linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(62, 184, 229)), color-stop(1, rgb(44, 160, 202)));
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+}
+.search_button:before {
+  background-color: #2561b4;
+  font-family: FontAwesome;
+  content: "\f002";
+  width: 35px;
+  max-height: 32px;
+  height: 100%;
+  position: absolute;
+  display: block;
+  padding-top: 8px;
+  top: -2px;
+  left: -36px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #8fd1ea;
+  text-shadow: 1px 1px 0px #07526e;
+  border-right: solid 1px #07526e;
+  background-image: linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(10, 94, 125)), color-stop(1, rgb(14, 139, 184)));
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+}
+.search_button:active::before {
+  top: -3px;
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+}
+
+/* ------------- Search end --------- */
+
+
+/* ------------- Music --------- */
+
+.music {
+  background-color: #3bb3e0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  padding: 11px 20px;
+  border-left: solid 1px #2ab7ec;
+  margin-top: 10px;
+  margin-left: 35px;
+  background-image: linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(44, 160, 202)), color-stop(1, rgb(62, 184, 229)));
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+}
+.music:active {
+  top: 3px;
+  background-image: linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(62, 184, 229)), color-stop(1, rgb(44, 160, 202)));
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+}
+.music:before {
+  background-color: #2561b4;
+  font-family: FontAwesome;
+  content: "\f001";
+  width: 35px;
+  max-height: 32px;
+  height: 100%;
+  position: absolute;
+  display: block;
+  padding-top: 8px;
+  top: -2px;
+  left: -36px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #8fd1ea;
+  text-shadow: 1px 1px 0px #07526e;
+  border-right: solid 1px #07526e;
+  background-image: linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(10, 94, 125)), color-stop(1, rgb(14, 139, 184)));
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+}
+.music:active::before {
+  top: -3px;
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+}
+
+/* ------------- Music end --------- */
+
+
+/* ------------- Movies --------- */
+
+.movie {
+  background-color: #3bb3e0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  padding: 11px 20px;
+  border-left: solid 1px #2ab7ec;
+  margin-top: 10px;
+  margin-left: 35px;
+  background-image: linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(44, 160, 202)), color-stop(1, rgb(62, 184, 229)));
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+}
+.movie:active {
+  top: 3px;
+  background-image: linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(62, 184, 229)), color-stop(1, rgb(44, 160, 202)));
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+}
+.movie:before {
+  background-color: #2561b4;
+  font-family: FontAwesome;
+  content: "\f008";
+  width: 35px;
+  max-height: 32px;
+  height: 100%;
+  position: absolute;
+  display: block;
+  padding-top: 8px;
+  top: -2px;
+  left: -36px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #8fd1ea;
+  text-shadow: 1px 1px 0px #07526e;
+  border-right: solid 1px #07526e;
+  background-image: linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(10, 94, 125)), color-stop(1, rgb(14, 139, 184)));
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+}
+.movie:active::before {
+  top: -3px;
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+}
+
+/* ------------- Music end --------- */
+
+
+/* ------------- ios --------- */
+
+.ios {
+  background-color: #3bb3e0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  padding: 11px 20px;
+  border-left: solid 1px #2ab7ec;
+  margin-top: 10px;
+  margin-left: 35px;
+  background-image: linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(44, 160, 202)), color-stop(1, rgb(62, 184, 229)));
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+}
+.ios:active {
+  top: 3px;
+  background-image: linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(62, 184, 229)), color-stop(1, rgb(44, 160, 202)));
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+}
+.ios:before {
+  background-color: #2561b4;
+  font-family: FontAwesome;
+  content: "\f10b";
+  width: 35px;
+  max-height: 32px;
+  height: 100%;
+  position: absolute;
+  display: block;
+  padding-top: 8px;
+  top: -2px;
+  left: -36px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #8fd1ea;
+  text-shadow: 1px 1px 0px #07526e;
+  border-right: solid 1px #07526e;
+  background-image: linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(10, 94, 125)), color-stop(1, rgb(14, 139, 184)));
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+}
+.ios:active::before {
+  top: -3px;
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+}
+
+/* ------------- ios end --------- */
+
+
+/* ------------- Books --------- */
+
+.book {
+  background-color: #3bb3e0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  padding: 11px 20px;
+  border-left: solid 1px #2ab7ec;
+  margin-top: 10px;
+  margin-left: 35px;
+  background-image: linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(44, 160, 202) 0%, rgb(62, 184, 229) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(44, 160, 202)), color-stop(1, rgb(62, 184, 229)));
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
+}
+.book:active {
+  top: 3px;
+  background-image: linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(62, 184, 229) 0%, rgb(44, 160, 202) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(62, 184, 229)), color-stop(1, rgb(44, 160, 202)));
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
+}
+.book:before {
+  background-color: #2561b4;
+  font-family: FontAwesome;
+  content: "\f02d";
+  width: 35px;
+  max-height: 32px;
+  height: 100%;
+  position: absolute;
+  display: block;
+  padding-top: 8px;
+  top: -2px;
+  left: -36px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #8fd1ea;
+  text-shadow: 1px 1px 0px #07526e;
+  border-right: solid 1px #07526e;
+  background-image: linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(10, 94, 125) 0%, rgb(14, 139, 184) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(10, 94, 125)), color-stop(1, rgb(14, 139, 184)));
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999;
+}
+.book:active::before {
+  top: -3px;
+  -webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+  -moz-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+  -o-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999;
+}
+
+/* ------------- Music end --------- */
